@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>datascructure1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+datascructure1.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Write code using find() and string slicing to extract the number</span>
+<span class="s0"># at the end of the line below.</span>
+<span class="s0"># Convert the extracted value to a floating point number and print it out.</span>
+
+<span class="s1">data = </span><span class="s2">&quot;From X-DSPAM-Confidence:    0.8475&quot;</span>
+
+<span class="s0"># Find the position of the last space character in the string</span>
+<span class="s1">last_space_pos = data.rfind(</span><span class="s2">' '</span><span class="s1">)</span>
+
+<span class="s0"># Extract the number at the end of the line using string slicing</span>
+<span class="s1">number_at_end = data[last_space_pos+</span><span class="s3">1</span><span class="s1">:]</span>
+
+<span class="s0"># Convert the extracted value to a floating-point number</span>
+<span class="s1">float_number = float(number_at_end)</span>
+
+<span class="s0"># Print the extracted floating-point number</span>
+<span class="s1">print(float_number)</span>
+</pre>
+</body>
+</html>
